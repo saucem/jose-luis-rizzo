@@ -448,19 +448,27 @@
             <form class="contact-form py-4">
               <div class="mb-3">
                 <label for="input-name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="input-name" aria-describedby="nombre">
+                <input type="text" class="form-control" id="input-name" aria-describedby="nombre" required>
               </div>
               <div class="mb-3">
                 <label for="input-email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="input-email" aria-describedby="email-help">
+                <input type="email" class="form-control" id="input-email" aria-describedby="email-help" required>
                 <div id="email-help" class="form-text">Nunca compartiremos tu información con nadie</div>
               </div>
               <div class="mb-3">
                 <label for="input-textarea" class="form-label">Consulta</label>
                 <textarea class="form-control" id="input-textarea" rows="3"></textarea>
               </div>
-              <div class="mb-3"><img src="images/reCAPTCHA.png" alt="Temp" class="recaptcha"></div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label for="input-name" class="form-label">Resolver: 5+2=?</label>
+                  <input type="text" class="form-control" id="input-solved" aria-describedby="solve" required>
+                </div>              
+                <!--<div class="mb-3"><img src="images/reCAPTCHA.png" alt="Temp" class="recaptcha"></div>-->
+                <div class="col-6 d-flex align-items-end">
+                  <button type="submit" class="btn btn-warning">Enviar</button>
+                </div>
+              </div>
             </form>
           </div>
         </div>
