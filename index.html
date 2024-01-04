@@ -47,6 +47,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item d-md-none"><a href="#carousel" class="nav-link active">HOME</a></li>
               <li class="nav-item d-md-none"><a href="#camiones" class="nav-link">CAMIONES</a></li>
+              <li class="nav-item d-md-none"><a href="#viales" class="nav-link">MÁQUINAS VIALES</a></li>
               <li class="nav-item d-md-none"><a href="#equipos" class="nav-link">EQUIPOS</a></li>
               <li class="nav-item d-md-none"><a href="#vehiculos" class="nav-link">VEHíCULOS</a></li>
               <li class="nav-item d-md-none"><a href="#otros" class="nav-link">OTRAS CATEGORíAS</a></li>
@@ -68,31 +69,6 @@
         </div>
       </nav>
 
-      <!--
-      <div class="container-fluid d-md-none">
-        <div class="row">
-            <div class="col-2">
-              <button class="btn btn-primary my-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidenavbar" aria-controls="sidenavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list fs-2"></i>
-              </button>
-            </div>
-            <div class="col-10 text-center">
-              <a class="nav-link" href="#">
-                <i class="bi bi-whatsapp header-nav-icon"></i>&nbsp;(011) 15 5308-8761
-              </a>
-              <a class="nav-link" href="#">
-                <i class="bi bi-envelope header-nav-icon"></i>&nbsp;ventas@joseluisrizzo.com
-              </a>
-            </div>
-        </div>
-      </div>
-      <div class="md-header-nav d-none d-md-flex justify-content-end align-items-center shadow-sm">
-        <a class="nav-link mx-4" href="#"><i class="bi bi-facebook header-nav-icon"></i></a>
-        <a class="nav-link mx-2" href="#"><i class="bi bi-whatsapp header-nav-icon"></i>&nbsp;(011) 15 5308-8761</a>
-        <a class="nav-link mx-2" href="#"><i class="bi bi-envelope header-nav-icon"></i>&nbsp;ventas@joseluisrizzo.com</a>
-        <a class="nav-link mx-2" href="#"><i class="bi bi-box-arrow-in-right header-nav-icon"></i>&nbsp;Login</a>
-      </div>
-      -->
       <div class="btn-float facebook-scheme">
         <a href="http://www.facebook.com/joseluisrizzoquilmes" class="social-link" aria-label="Facebook">
           <i class="bi bi-facebook"></i>
@@ -111,16 +87,17 @@
     </header>
     
     <aside>
-      <nav class="d-none d-md-flex side-nav bg-dark-subtle justify-content-center">
+      <nav class="d-none d-md-flex side-nav justify-content-center">
         <div class="element-container">
           <div class="side-logo-holder"></div>
           <div class="side-navigation" id="sidenavbar">
-            <a href="#carousel" class="main-nav-link active">HOME</a>
-            <a href="#camiones" class="main-nav-link">CAMIONES</a>
-            <a href="#equipos" class="main-nav-link">EQUIPOS</a>
-            <a href="#vehiculos" class="main-nav-link">VEHíCULOS</a>
-            <a href="#otros" class="main-nav-link">OTRAS CATEGORíAS</a>
-            <a href="#contacto" class="main-nav-link">CONTACTO</a>
+            <a href="#carousel" class="side-nav-link active">HOME</a>
+            <a href="#camiones" class="side-nav-link">CAMIONES</a>
+            <a href="#viales" class="side-nav-link">MÁQUINAS VIALES</a>
+            <a href="#equipos" class="side-nav-link">EQUIPOS</a>
+            <a href="#vehiculos" class="side-nav-link">VEHíCULOS</a>
+            <a href="#otros" class="side-nav-link">OTRAS CATEGORíAS</a>
+            <a href="#contacto" class="side-nav-link">CONTACTO</a>
           </div>
         </div>
       </nav>
@@ -173,7 +150,7 @@
               </div>
               <div class="row h-50">
                 <div class="col-12 text-center">
-                  <a href="#contacto" class="btn btn-lg btn-danger col-6 col-sm-3 col-lg-2 carousel-btn text-center">Consultar</a>
+                  <a href="#viales" class="btn btn-lg btn-danger col-6 col-sm-3 col-lg-2 carousel-btn text-center">Consultar</a>
                 </div>
               </div>
             </div>            
@@ -218,17 +195,18 @@
       </div>
       <div class="black-divider-top"></div>
       <div class="nav main-nav d-flex align-items-center">
-        <ul class="nav-ul m-0">
-          <li class="p-0"><a href="#camiones" class="main-nav-link">CAMIONES</a></li>
-          <li class="p-0"><a href="#equipos" class="main-nav-link">EQUIPOS</a></li>
-          <li class="p-0"><a href="#vehiculos" class="main-nav-link">VEHíCULOS</a></li>
-          <li class="p-0"><a href="#otros" class="main-nav-link">OTRAS CATEGORíAS</a></li>
+        <ul class="nav-ul m-0 d-flex justify-content-evenly">
+          <li class="py-1"><a href="#camiones" class="main-nav-link">CAMIONES</a></li>
+          <li class="py-1"><a href="#viales" class="main-nav-link">MÁQUINAS VIALES</a></li>
+          <li class="py-1"><a href="#equipos" class="main-nav-link">EQUIPOS</a></li>
+          <li class="py-1"><a href="#vehiculos" class="main-nav-link">VEHíCULOS</a></li>
+          <li class="py-1"><a href="#otros" class="main-nav-link">OTRAS CATEGORíAS</a></li>
         </ul>
       </div>
       <div class="black-divider-bottom"></div>
       <div class="container-fluid section-container" id="camiones">
         <h1 class="section-title text-center pt-3">Camiones</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 mx-auto">
               <img src="images/lote-9-2.jpeg" alt="Lote-7-2" class="rounded-top">
@@ -276,9 +254,15 @@
           </div>
         </div>
       </div>
+      <div class="container-fluid section-container" id="viales">
+        <h1 class="section-title text-center pt-3">Máquinas Viales</h1>
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        </div>
+      </div>
+
       <div class="container-fluid section-container" id="equipos">
         <h1 class="section-title text-center pt-3">Equipos</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 mx-auto">
               <img src="images/semiar-1-5.jpg" alt="semiar-1-5" class="rounded-top">
@@ -328,7 +312,7 @@
       </div>
       <div class="container-fluid section-container" id="vehiculos">
         <h1 class="section-title text-center pt-3">Vehículos</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 mx-auto">
               <img src="images/lote-3-1.jpeg" alt="Lote-1-1" class="rounded-top">
@@ -378,7 +362,7 @@
       </div>
       <div class="container-fluid section-container" id="otros">
         <h1 class="section-title text-center pt-3">Otras Categorías</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 mx-auto">
               <img src="images/cabina-ambulancia.jpg" alt="cabina ambulancia" class="rounded-top">
@@ -452,19 +436,11 @@
         <div class="row justify-content-evenly w-100">
           <div class="col-10 col-md-5">
             <h1 class="contact-title mt-4">Hablemos</h1>
-            <p class="contact-item"><i class="bi bi-envelope header-nav-icon px-2 align-middle"></i>ventas@joseluisrizzo.com</p>
-            <p class="contact-item"><i class="bi bi-whatsapp header-nav-icon px-2 align-middle"></i>(011) 15 5308-8761</p>
-            <p class="contact-item"><i class="bi bi-geo-alt header-nav-icon px-2 align-middle"></i>Av. Tomas Flores 2400 <span class="d-none d-lg-inline-block">, Quilmes Oeste - Bs. As.</span></p>
+            <p class="contact-item"><i class="bi bi-envelope header-nav-icon px-2 align-middle"></i>&nbsp;ventas@joseluisrizzo.com</p>
+            <p class="contact-item"><i class="bi bi-whatsapp header-nav-icon px-2 align-middle"></i>&nbsp;(011) 15 5308-8761</p>
+            <p class="contact-item"><i class="bi bi-geo-alt header-nav-icon px-2 align-middle"></i>&nbsp;Av. Tomas Flores 2400 <span class="d-none d-lg-inline-block">, Quilmes Oeste - Bs. As.</span></p>
           </div>
-          <div class="col-10 col-md-5 form-container">
-            <!--
-            <form action="?" method="POST">
-              <div class="g-recaptcha" data-sitekey="6LdRFzgpAAAAAHT2Q2ut8rGRYdDOeZTIEKrtGUj5"></div>
-              <br/>
-              <input type="submit" value="Enviar">
-            </form>
-            -->
-            <!--Clave Secreta: 6LdRFzgpAAAAALueKfy7mWOdJUlNd8AueerO5hvm-->
+          <div class="col-10 col-md-5 form-container my-4">
             <form class="contact-form py-4">
               <div class="mb-3">
                 <label for="input-name" class="form-label">Nombre</label>
@@ -484,7 +460,6 @@
                   <label for="input-name" class="form-label">Resolver: 5+2=?</label>
                   <input type="text" class="form-control" id="input-solved" aria-describedby="solve" required>
                 </div>              
-                <!--<div class="mb-3"><img src="images/reCAPTCHA.png" alt="Temp" class="recaptcha"></div>-->
                 <div class="col-6 d-flex align-items-end">
                   <button type="submit" class="btn btn-warning">Enviar</button>
                 </div>
@@ -495,7 +470,11 @@
       </div>
     </main>
     <footer>
-      <!-- place footer here -->
+      <div class="container-fluid d-flex justify-content-center align-items-end">
+        <div class="h-25 text-center">
+          <p class="text-light">2024 - Todos los derechos reservados - José Luis Rizzo</p>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
