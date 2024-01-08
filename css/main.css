@@ -31,7 +31,7 @@ body, aside {
   border: none;
 }
 
-main, #top {
+main, #top, #footer-data {
   width: 85%;
   margin-left: auto;
   margin-right: 0;
@@ -173,12 +173,12 @@ main, #top {
   min-height: 10vh;
 }
 
+/*
 .main-nav .nav-ul{
-  /*
   display: flex;
   justify-content: space-around;
-  */
 }
+*/
 
 .black-divider-top{
   height: 5vh;
@@ -226,6 +226,7 @@ main, #top {
 .card{
   font-family: "ABeeZee", Arial, Helvetica, sans-serif;
   margin-bottom: 2em;
+  border-color: transparent;
 }
 
 .card img{
@@ -324,13 +325,25 @@ main, #top {
 
 footer {
   min-height: 25vh;
+}
+
+footer, #footer-data {
   background-color: black;
+}
+
+footer h3 {
+  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#footer-image {
+  filter: grayscale(100%);
 }
 
 /*media queries*/
 
 @media (max-width: 767px) {
-  main, #top {
+  main, #top, #footer-data {
     width: 100svw;
   }
 
