@@ -435,4 +435,11 @@ footer h3 {
     height: 40vh;
   }
 
+  .carousel-control-prev, .carousel-control-next{
+    width: 12%;
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    animation-name: none;
+  }
 }
